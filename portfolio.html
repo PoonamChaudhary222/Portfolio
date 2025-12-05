@@ -1,0 +1,473 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+            body{
+               scroll-padding-top: 120px; 
+                /* background-color: rgb(2, 49, 49); */
+                font-family: Arial, sans-serif;
+                background-color: #0f172a;
+                color: #e2e8f0;
+               font-family: Arial, sans-serif;
+                padding: 25px;
+                overflow-x: hidden;
+              
+                /* overflow-y: scroll; */
+                
+                        }
+             
+
+              
+     /* upar section ka prt        */
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+}
+
+#image1 img{
+    width: 300px;
+    border-radius: 50%;
+    animation: float 3s infinite ease-in-out;
+}
+ 
+@keyframes float{
+    0%{ transform: translateY(0); }
+    50%{ transform: translateY(-12px); }
+    100%{ transform: translateY(0); }
+} 
+
+.main h2 span{
+    color: #3d74ec;
+}
+
+
+
+/* git part */
+.box_design{
+  display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            /* margin-top: 20px; */
+}
+
+
+#box{
+  background-color:transparent;
+  width: 50px;
+  height: 35px;
+   margin-top: 10px;
+  /* margin-left: 90px; */
+  border-radius: 10px;
+  }
+  #box1{
+    background-color:transparent;
+  width: 50px;
+  height: 35px;
+   margin-top: 10px;
+  /* margin-left: 90px; */
+  margin-right: 20px;
+  border-radius: 10px;
+
+  }
+   
+  #box:hover{
+   transform: translateY(-5px);
+                 background:transparent;
+                  border-color: #0639a7;
+}
+ #box1:hover{
+    transform: translateY(-5px);
+                  background:transparent;
+                 
+ }
+#myImage{
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  /* margin-left: 100px;
+  margin-top: 20px; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+    place-items: center;
+     
+  
+  }
+#myImage:hover{
+                 /* transform: translateY(-1px); */
+                
+                  background:transparent;
+                  color: white;
+}
+        /* about ka part */
+
+               h1{
+                text-align: center;
+               }
+               h4{
+                text-align: center;
+               }
+              
+
+          
+
+               .navbar{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    background: #0f172a;
+    z-index: 10;
+}
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+.navbar a:hover{
+    color: #3d74ec;
+}
+
+
+
+      /* $$$$$$$$$$ skills part */
+
+             .skills_design{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+            
+             }
+
+             .skill{
+               background: #0639a7;
+                 padding: 12px 25px;
+                 border-radius: 8px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+                 transition: all 0.3s ease; 
+                 margin-top: 25px;
+             }
+             
+             .skill:hover{
+               transform: translateY(-5px);
+                  background: #012224;
+                  color: white;
+             } 
+
+
+             /* #### project part */
+             
+         .Projects{
+          text-align: center;
+          padding: 60px 20px;
+         }
+       
+
+        .projects-container{
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+      
+
+        .project{
+    background-color: #033f8d;
+    width: 230px;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+       
+
+.project img{
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.project:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+     footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 40px;
+            margin-top: 100px;
+        }
+
+         /* contact */
+
+
+    .contact-wrapper {
+    display: flex;
+    justify-content: center;   
+    align-items: center;      
+    min-height: 80vh;          
+    width: 100%;
+}
+#contact_box {
+    background-color: #033f8d;
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 30px 0;
+    margin-bottom: 60px;
+}
+
+
+    .ING{
+      width: 400px;
+       font-size: large;
+       margin: 20px;
+
+       
+      
+      
+     
+    }
+    #BTN{
+      color:black;
+       font-size: larger;
+       background-color: rgb(150, 158, 233);
+       
+       
+
+    }
+    #BTN:hover{
+      background-color: darkcyan;
+      transform:translateY(-2px);
+      }
+
+
+      /* part resume */
+
+     .resume_part{
+         background-color: #033f8d;
+    width: 230px;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s;
+     
+      }
+       .resume_part {
+  display: flex;
+  align-items: center;    
+  justify-content: center; 
+  margin: 40px auto;      
+  padding: 20px;
+  border: 10px solid #1d4ed8; 
+  border-radius: 10px;
+}
+.resume_part:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+
+
+p{
+  display: flex;
+  align-items: center;    
+  justify-content: center; 
+}
+p:hover{
+  color: #3d74ec; 
+  cursor: pointer;
+}
+
+         /* phone style */
+
+        
+@media (max-width: 768px) {
+.main {
+flex-direction: column;
+text-align: center;
+}
+#image1 img {
+margin-top: 20px;
+}
+body {
+padding: 10px;
+}
+}
+
+         
+   </style>
+</head>
+<body>
+  
+  
+  <div class="MAIN">
+
+    <div class="navbar">
+            <a href="#home">Home</a>
+             <a href="#skills">Skills</a>
+             <a href="#about">About</a>
+           
+            <a href="#project">Project</a>
+            <a href="#contact">Contact</a>
+    </div>
+    
+<section id="home" class="main">
+    <div>
+        <h2>Hello, I'm <span>Poonam Chaudhary</span></h2><br>
+        <h3>I am a Frontend Developer.<br>
+        I love designing projects and websites.</h3>
+        <br>
+
+       <div class="box_design">
+
+        <div id="box">
+         <a href="https://github.com/PoonamChaudhary222 " >
+            <img  id="myImage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5NJYNc33HXo2qGxv-3C4Y2KWiDlSfnO0aeg&s" alt="git">
+            
+        </a>
+       </div>
+       <div id="box1">
+    <a href="https://www.linkedin.com/in/poonam-chaudhary-248487298/ ">
+      <img id="myImage" src="https://i.pinimg.com/736x/d0/24/2f/d0242fc3351571f8243a1db4ac0370c6.jpg" alt="linkdine">
+    </a>
+
+       </div>
+       </div>
+    </div>
+    <div  id="image1">
+    <img  src="https://t3.ftcdn.net/jpg/15/34/03/58/360_F_1534035806_6gn57ou4V0dVZY6l30h6nEB5gWQRAP6v.jpg" alt="profile">
+    </div>
+</section>
+  
+
+ 
+    <div  id="about" class="box">
+       <h1>About</h1><br><br>
+    <h4>I’m Poonam Chaudhary, a Frontend Developer specializing in building clean, modern, and fully responsive web interfaces.<br>
+With expertise in HTML, CSS, JavaScript, and frameworks like React, I focus on creating seamless <br> user experiences and pixel-perfect designs.  
+I’m passionate about writing efficient <br>code, optimizing performance, and staying updated with the latest web trends.
+</h4>
+</div>
+
+
+ <div   id="skills" class="Skills" style="margin-top: 80px;" >
+  <h1>Skills</h1>
+   <nav   class="skills_design" >
+    <div class="skill">HTML</div>
+   <div class="skill">CSS</div>
+   <div class="skill">JAVA SCRIPT</div>
+   <div class="skill">REACT</div>
+   <div class="skill">SQL</div>
+   <div class="skill">Git & GitHub</div>
+  
+   </nav>
+    </div> 
+
+
+   <!-- ####project part -->
+
+
+    <section id="project" class="Projects">
+      <h1 >Projects</h1>
+      <div class="projects-container">
+      
+            <div class="project">
+        <a href=" https://github.com/PoonamChaudhary222/Poonam-learning/blob/main/BMI_Calculator.html">
+          <img src="https://play-lh.googleusercontent.com/prZn2jGWXKtLARgJ20jUzLP-7O3_ENfnYVL2wMVsTznm043Pv59nSMSJqLPSCw_quA" alt="Project-1"></a>
+         <h3>BMICalculator</h3>
+        <p>A BMI calculator quickly checks body fat using height and weight.</p>
+      </div>
+            <div class="project">
+        <a href="https://github.com/PoonamChaudhary222/contact-form">
+          <img src="https://www.pngitem.com/pimgs/m/163-1630680_google-forms-logo-png-transparent-png.png" alt="Project-1"></a>
+         <h3>Google Form</h3>
+        <p>Google form UI clone using HTML, CSS, JS.</p>
+        
+      </div>
+      <div class="project">
+        <img src="https://images.seeklogo.com/logo-png/35/1/portfolio-plus-banking-software-logo-png_seeklogo-354120.png" alt="Project-1">
+         <h3>Portfolio </h3>
+        <p>Personal Responsive Portfolio Website.with HTML, CSS, and JavaScript.</p>
+      </div>
+      </div>
+
+    </section>
+
+<!-- My resume -->
+
+<section>
+  <h1>My Resume</h1><br>
+
+ <div>
+  <a href="https://docs.google.com/document/d/16a0NDPp-pnpIJnGAY1aGf1GenYU6a-Bb/edit?usp=sharing&ouid=107565100829326453641&rtpof=true&sd=true">
+  
+        <img class="resume_part"src="https://img.freepik.com/free-vector/resume-writing-service-abstract-concept_335657-3098.jpg" alt="Resume">
+        <p><u >MY CV</u></p>
+      </div>
+    </a>
+</section>
+
+<div>
+   <br><br> <h1 id="contact">Contact</h1>
+   <div class="contact-wrapper">
+    <div id="contact_box">
+
+     <section>
+      
+
+     <br><input style="height: 40px; border-radius: 10px;"class="ING" style="margin-top:10px "type="Name" text="Name" placeholder="Your Full Name" >
+     <input style="height: 40px; border-radius: 10px;" class="ING"  type="Name" text="Name" placeholder="Your Email ">
+     <input style="height: 90px; border-radius: 10px;" class="ING" type="Name" text="Name" placeholder="Your message">
+     <button style="height: 40px; border-radius: 10px;"  id="BTN">Send Message</button><br>
+    </section>
+   </div>
+   </div>
+</div>
+<div>
+  <h4> This is just prototype, I will make full website if I made for you.</h4>
+</div>
+
+    <footer>
+       <p> © Poonam Chaudhary 2025  | All Rights Reserved</p>
+    </footer>
+
+  </div>
+</body>
+<script>
+
+  document.querySelectorAll(".navbar a").forEach(link => {
+    link.addEventListener("click", function(e){
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth"
+        });
+    });
+});
+</script>
+</html> 
+
